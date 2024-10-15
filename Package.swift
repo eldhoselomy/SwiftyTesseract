@@ -32,6 +32,7 @@ let linkerSettings: [PackageDescription.LinkerSetting] = [
 let libraryTarget = PackageDescription.Target.target(
   name: "SwiftyTesseract",
   dependencies: ["libtesseract"],
+  swiftSettings: [.unsafeFlags(["-enable-library-evolution"])],
   linkerSettings: linkerSettings
 )
 
