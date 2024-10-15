@@ -53,7 +53,7 @@ let targets: [PackageDescription.Target] = [
 
 let package = Package(
   name: "SwiftyTesseract",
-  platforms: [.iOS(.v11), .macOS(.v10_13)],
+  platforms: [.iOS(.v16), .macOS(.v10_13)],
   products: [
     // Products define the executables and libraries a package produces, and make them visible to other packages.
     .library(
